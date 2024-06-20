@@ -23,7 +23,7 @@ const perguntas = [
         enunciado: "Como podemos incentivar o uso de energia solar e outras formas de energia limpa, especialmente em comunidades carentes?",
         alternativas: [
             "Promovendo a instalação de painéis solares em escolas e centros comunitários de comunidades marginalizadas.", 
-            "Alternativa 2"
+            "Defendendo políticas públicas que subsidiem a energia solar para famílias de baixa renda."
         ]
     } 
 ];
