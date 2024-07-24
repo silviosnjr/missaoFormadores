@@ -7,23 +7,41 @@ const textoResultado = document.querySelector(".texto-resultado");
 const perguntas = [
     {
         enunciado: "Como você acredita que podemos combater o racismo na sociedade?",
-        alternativas: [
-            "Participando de campanhas de conscientização e educação sobre igualdade racial.", 
-            "Denunciando atos de discriminação e apoiando políticas públicas inclusivas."
+        alternativas: [           
+            {
+                texto: "Participando de campanhas de conscientização e educação sobre igualdade racial.",
+                afirmacao: "afirmacao"
+            },
+            {
+                texto:  "Denunciando atos de discriminação e apoiando políticas públicas inclusivas.",
+                afirmacao: "afirmacao"
+            }
         ]
     },
     {
         enunciado: "Como você pode ajudar a combater a disseminação de fake news, especialmente as que perpetuam o racismo?",
-        alternativas: [
-            "Verificando a veracidade das informações antes de compartilhar qualquer conteúdo, especialmente sobre temas sensíveis como racismo.", 
-            "Educando amigos e familiares sobre os perigos das fake news e incentivando-os a não compartilhar conteúdos falsos que perpetuam o racismo."
+        alternativas: [ 
+            {
+                texto: "Verificando a veracidade das informações antes de compartilhar qualquer conteúdo, especialmente sobre temas sensíveis como racismo.",
+                afirmacao: "afirmacao"
+            },
+            {
+                texto: "Educando amigos e familiares sobre os perigos das fake news e incentivando-os a não compartilhar conteúdos falsos que perpetuam o racismo.",
+                afirmacao: "afirmacao"
+            }
         ]
     },
     {
         enunciado: "Como podemos incentivar o uso de energia solar e outras formas de energia limpa, especialmente em comunidades carentes?",
-        alternativas: [
-            "Promovendo a instalação de painéis solares em escolas e centros comunitários de comunidades marginalizadas.", 
-            "Defendendo políticas públicas que subsidiem a energia solar para famílias de baixa renda."
+        alternativas: [           
+            {
+                texto: "Promovendo a instalação de painéis solares em escolas e centros comunitários de comunidades marginalizadas.",
+                afirmacao: "afimacao"
+            },
+            {
+                texto: "Defendendo políticas públicas que subsidiem a energia solar para famílias de baixa renda.",
+                afirmacao: "afirmacao"
+            }
         ]
     } 
 ];
@@ -39,10 +57,14 @@ function mostraPergunta(){
 }
 
 function mostraAlternativas(){
-    for (const alternativa of perguntaAtual.alternativas){
-        const botaoAlternativa = document.createElement("button");
-        botaoAlternativa.textContent = alternativa;
-        caixaAlternativas.appendChild(botaoAlternativa);
+    for(const alternativa of perguntaAtual.alternativas){
+        const botaoAlternativas = document.createElement("button");
+        botaoAlternativas.textContent = alternativa.texto;
+        botaoAlternativas.addEventListener("click", function(){
+            atual++;
+            mostraPergunta();
+        });
+        caixaAlternativas.appendChild(botaoAlternativas)
     }
 }
 
