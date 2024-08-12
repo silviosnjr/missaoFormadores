@@ -10,11 +10,11 @@ const perguntas = [
         alternativas: [           
             {
                 texto: "Participando de campanhas de conscientização e educação sobre igualdade racial.",
-                afirmacao: "afirmacao"
+                afirmacao: "Você acredita que a conscientização e a educação são ferramentas essenciais para promover a igualdade racial e combater o racismo."
             },
             {
                 texto:  "Denunciando atos de discriminação e apoiando políticas públicas inclusivas.",
-                afirmacao: "afirmacao"
+                afirmacao: "Você considera a denúncia de discriminação e o suporte a políticas públicas inclusivas como métodos importantes para enfrentar o racismo."
             }
         ]
     },
@@ -23,11 +23,11 @@ const perguntas = [
         alternativas: [ 
             {
                 texto: "Verificando a veracidade das informações antes de compartilhar qualquer conteúdo, especialmente sobre temas sensíveis como racismo.",
-                afirmacao: "afirmacao"
+                afirmacao: "Você valoriza a verificação de informações como um meio fundamental para combater a disseminação de fake news e evitar a propagação de conteúdos prejudiciais."
             },
             {
                 texto: "Educando amigos e familiares sobre os perigos das fake news e incentivando-os a não compartilhar conteúdos falsos que perpetuam o racismo.",
-                afirmacao: "afirmacao"
+                afirmacao: "Você acredita na importância de educar os outros sobre os riscos das fake news e incentivar a responsabilidade ao compartilhar informações, especialmente sobre temas raciais."
             }
         ]
     },
@@ -36,11 +36,11 @@ const perguntas = [
         alternativas: [           
             {
                 texto: "Promovendo a instalação de painéis solares em escolas e centros comunitários de comunidades marginalizadas.",
-                afirmacao: "afimacao"
+                afirmacao: "Você acredita que a instalação de painéis solares em locais estratégicos como escolas e centros comunitários pode ser uma forma eficaz de promover o uso de energia limpa e beneficiar comunidades carentes."
             },
             {
                 texto: "Defendendo políticas públicas que subsidiem a energia solar para famílias de baixa renda.",
-                afirmacao: "afirmacao"
+                afirmacao: "Você considera essencial a defesa de políticas públicas que ofereçam subsídios para energia solar, facilitando o acesso a essa tecnologia para famílias de baixa renda."
             }
         ]
     } 
